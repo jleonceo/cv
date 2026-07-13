@@ -18,4 +18,4 @@ Abre `index.html` en cualquier navegador. Para guardar como PDF: `Ctrl+P` → "G
 
 ---
 
-*Juan Luis León Rodríguez · Data Analyst · Business Intelligence*
+*Juan Luis León Rodríguez · Data Analyst · Business Intelligence · [juanluisleon.vercel.app](https://juanluisleon.vercel.app)*
