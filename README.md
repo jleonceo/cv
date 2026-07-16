@@ -1,10 +1,10 @@
-# CV — Juan Luis León Rodríguez
+# CV · Juan Luis León Rodríguez
 
 Currículum profesional en formato HTML/CSS, listo para imprimir en A4 o visualizar en navegador.
 
 ## Contenido
 
-`index.html` — archivo único, autocontenido. Tipografías cargadas desde Google Fonts y gráficos generados con [Chart.js](https://www.chartjs.org/) (vía CDN).
+`index.html`: archivo único, autocontenido. Tipografías cargadas desde Google Fonts y gráficos generados con [Chart.js](https://www.chartjs.org/) (vía CDN).
 
 ## Cómo verlo
 
