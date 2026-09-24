@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CV — Juan Luis León Rodríguez</title>
+<title>CV · Juan Luis León Rodríguez</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <style>
@@ -31,20 +31,6 @@ padding: 24px 18px;
 display: flex;
 flex-direction: column;
 gap: 18px;
-}
-.avatar {
-width: 60px;
-height: 60px;
-border-radius: 50%;
-background: #2E86AB;
-display: flex;
-align-items: center;
-justify-content: center;
-font-family: 'Playfair Display', serif;
-font-size: 22px;
-font-weight: 600;
-color: #fff;
-border: 2.5px solid rgba(255,255,255,0.25);
 }
 .name-block h1 {
 font-family: 'Playfair Display', serif;
@@ -91,26 +77,25 @@ line-height: 1.3;
 color: #c5d5e8;
 text-decoration: none;
 }
-.skill-bar-label {
-font-size: 10.5px;
-color: #c5d5e8;
-margin-bottom: 3px;
-}
-.skill-bar {
-height: 4px;
-background: rgba(255,255,255,0.1);
-border-radius: 2px;
-margin-bottom: 8px;
-overflow: hidden;
-}
-.skill-bar-fill {
-height: 100%;
-background: linear-gradient(90deg, #2E86AB, #4CAF82);
-}
 .tag-list {
 display: flex;
 flex-wrap: wrap;
 gap: 4px;
+}
+.tag-group-title {
+font-size: 9.5px;
+font-weight: 500;
+color: #e8edf5;
+margin: 9px 0 4px;
+}
+.tag-group-title:first-of-type {
+margin-top: 0;
+}
+.proyecto-intro {
+font-size: 10px;
+color: #64748b;
+font-style: italic;
+margin-bottom: 5px;
 }
 .tag {
 background: rgba(46,134,171,0.2);
@@ -266,6 +251,8 @@ color: #1E3A5F;
 @media print {
 body { background: white; }
 .page { margin: 0; }
+.chart-block, .edu-item, .exp-header { break-inside: avoid; }
+.tag-group-title { break-after: avoid; }
 }
 </style>
 </head>
@@ -273,54 +260,112 @@ body { background: white; }
 <div class="page">
 
 <aside class="sidebar">
-<div class="avatar">JL</div>
 
 <div class="name-block">
 <h1>Juan Luis León<br>Rodríguez</h1>
-<p class="tagline">Controller Financiero<br>Business Intelligence<br>Automatización • Análisis de Datos</p>
+<p class="tagline">Controller Financiero<br>Business Intelligence<br>IA aplicada a la contabilidad</p>
 </div>
 
 <div class="sidebar-section">
 <h3>Contacto</h3>
-<div class="contact-item">📍 Reus, Tarragona</div>
-<div class="contact-item">📞 630 563 870</div>
-<div class="contact-item">✉ jleonceo@gmail.com</div>
-<div class="contact-item">🔗 <a href="https://www.linkedin.com/in/jlleonrodriguez/">LinkedIn</a></div>
-<div class="contact-item">💻 <a href="https://github.com/jleonceo">github.com/jleonceo</a></div>
-<div class="contact-item">🌐 <a href="https://juanluisleon.vercel.app">juanluisleon.vercel.app</a></div>
+<div class="contact-item">Reus, Tarragona</div>
+<div class="contact-item">630 563 870</div>
+<div class="contact-item">jleonceo@gmail.com</div>
+<div class="contact-item"><a href="https://www.linkedin.com/in/jlleonrodriguez/">linkedin.com/in/jlleonrodriguez</a></div>
+<div class="contact-item"><a href="https://github.com/jleonceo">github.com/jleonceo</a></div>
+<div class="contact-item"><a href="https://juanluisleon.vercel.app">juanluisleon.vercel.app</a></div>
 </div>
 
 <div class="sidebar-section">
-<h3>Competencias técnicas</h3>
-<div class="skill-bar-label">Power BI / DAX</div>
-<div class="skill-bar"><div class="skill-bar-fill" style="width:90%"></div></div>
+<h3>Competencias</h3>
 
-<div class="skill-bar-label">SQL / MySQL</div>
-<div class="skill-bar"><div class="skill-bar-fill" style="width:85%"></div></div>
-
-<div class="skill-bar-label">Automatización IA / n8n</div>
-<div class="skill-bar"><div class="skill-bar-fill" style="width:80%"></div></div>
-
-<div class="skill-bar-label">Python</div>
-<div class="skill-bar"><div class="skill-bar-fill" style="width:65%"></div></div>
-
-<div class="skill-bar-label">Excel Avanzado MCAS</div>
-<div class="skill-bar"><div class="skill-bar-fill" style="width:95%"></div></div>
-</div>
-
-<div class="sidebar-section">
-<h3>Herramientas</h3>
+<div class="tag-group-title">Finanzas y control de gestión</div>
 <div class="tag-list">
-<span class="tag">Power Query</span>
-<span class="tag">Power Automate</span>
-<span class="tag">Microsoft Copilot</span>
-<span class="tag">IA Generativa</span>
-<span class="tag">n8n</span>
-<span class="tag">Agentes IA</span>
+<span class="tag">Contabilidad financiera y analítica (PGC)</span>
+<span class="tag">Cierres contables</span>
+<span class="tag">IVA, IRPF e Impuesto de Sociedades</span>
+<span class="tag">Tesorería y cash flow</span>
+<span class="tag">Previsión de caja</span>
+<span class="tag">Antigüedad de saldos, DSO y DPO</span>
+<span class="tag">Ratios de liquidez, solvencia y rentabilidad</span>
+<span class="tag">Presupuesto frente a real</span>
+<span class="tag">Control presupuestario</span>
+<span class="tag">Conciliación bancaria</span>
+<span class="tag">Reporting ejecutivo</span>
 <span class="tag">Sage</span>
-<span class="tag">Reporting Ejecutivo</span>
-<span class="tag">Forecasting</span>
-<span class="tag">Control Presupuestario</span>
+</div>
+
+<div class="tag-group-title">Control interno</div>
+<div class="tag-list">
+<span class="tag">Ley de Benford</span>
+<span class="tag">Duplicados y fraccionamiento de pagos</span>
+<span class="tag">Pista de auditoría</span>
+<span class="tag">Segregación de funciones</span>
+</div>
+
+<div class="tag-group-title">Datos y Business Intelligence</div>
+<div class="tag-list">
+<span class="tag">Power BI</span>
+<span class="tag">DAX</span>
+<span class="tag">Power Query</span>
+<span class="tag">SQL</span>
+<span class="tag">MySQL</span>
+<span class="tag">Modelo en estrella</span>
+<span class="tag">Calidad y limpieza de datos</span>
+<span class="tag">Cuadros de mando</span>
+<span class="tag">Excel avanzado (MCAS)</span>
+</div>
+
+<div class="tag-group-title">Ciencia de datos</div>
+<div class="tag-list">
+<span class="tag">Python</span>
+<span class="tag">pandas</span>
+<span class="tag">scikit-learn</span>
+<span class="tag">Análisis exploratorio</span>
+<span class="tag">Segmentación RFM</span>
+<span class="tag">Series temporales</span>
+<span class="tag">Tests de permutación</span>
+</div>
+
+<div class="tag-group-title">IA aplicada</div>
+<div class="tag-list">
+<span class="tag">Claude y Claude Code</span>
+<span class="tag">Agentes y sistemas multiagente</span>
+<span class="tag">Skills</span>
+<span class="tag">Servidores MCP</span>
+<span class="tag">RAG</span>
+<span class="tag">Evals de LLM</span>
+<span class="tag">Prompt engineering</span>
+<span class="tag">Human in the loop</span>
+<span class="tag">Gobernanza de IA</span>
+<span class="tag">IA generativa</span>
+<span class="tag">Microsoft Copilot</span>
+</div>
+
+<div class="tag-group-title">Automatización y desarrollo</div>
+<div class="tag-list">
+<span class="tag">n8n</span>
+<span class="tag">Power Automate</span>
+<span class="tag">Git y GitHub</span>
+<span class="tag">Integración continua</span>
+<span class="tag">Webs en Astro y React</span>
+<span class="tag">Vercel</span>
+</div>
+
+<div class="tag-group-title">Protección de datos</div>
+<div class="tag-list">
+<span class="tag">RGPD y LOPDGDD</span>
+<span class="tag">Anonimización y seudonimización</span>
+</div>
+
+<div class="tag-group-title">Gestión y formación</div>
+<div class="tag-list">
+<span class="tag">Dirección de equipos</span>
+<span class="tag">Negociación con bancos y proveedores</span>
+<span class="tag">Formación en empresas</span>
+<span class="tag">Formación para el empleo</span>
+<span class="tag">Formación a funcionarios</span>
+<span class="tag">Manuales y documentación técnica</span>
 </div>
 </div>
 
@@ -328,7 +373,7 @@ body { background: white; }
 <h3>Idiomas</h3>
 <div class="idioma-row"><span>Castellano</span><div class="idioma-nivel"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div></div></div>
 <div class="idioma-row"><span>Catalán</span><div class="idioma-nivel"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div></div></div>
-<div class="idioma-row"><span>Inglés B1-B2</span><div class="idioma-nivel"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div><div class="dot"></div></div></div>
+<div class="idioma-row"><span>Inglés B2</span><div class="idioma-nivel"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div><div class="dot"></div></div></div>
 </div>
 </aside>
 
@@ -337,7 +382,7 @@ body { background: white; }
 <section>
 <div class="section-title">Perfil profesional</div>
 <p class="perfil-text">
-Profesional senior con más de 25 años de experiencia en control de gestión, análisis financiero y transformación digital de procesos. Especializado en Business Intelligence, automatización y reporting ejecutivo mediante Power BI, SQL y herramientas de IA aplicada al negocio. Desarrollo sistemas de análisis y control orientados a la toma de decisiones, integrando datos operativos, financieros y comerciales en entornos de reporting accionable.
+Más de 25 años de trayectoria: doce como formador técnico y contable, trece al frente de mi propio negocio y dos como responsable de operaciones y control de gestión. Hoy diseño sistemas de IA aplicados a la contabilidad y al control de gestión. Ninguna cifra sale de ellos sin cuadrar al céntimo con la base de datos.
 </p>
 </section>
 
@@ -345,30 +390,36 @@ Profesional senior con más de 25 años de experiencia en control de gestión, a
 <div class="section-title">Proyecto destacado</div>
 <div class="proyecto-card">
 <div class="proyecto-header">
-<h4>Sistema de Control Económico y Reporting</h4>
-<span class="badge">2024–2026</span>
+<h4>Sistema de control económico con IA · TechAcces</h4>
 </div>
 
 <div class="proyecto-stack">
 <span class="stack-tag">MySQL</span>
 <span class="stack-tag">Power BI</span>
 <span class="stack-tag">DAX</span>
-<span class="stack-tag">Power Query</span>
-<span class="stack-tag">IA Generativa</span>
 <span class="stack-tag">Python</span>
+<span class="stack-tag">n8n</span>
+<span class="stack-tag">Claude Code</span>
+<span class="stack-tag">MCP</span>
 <span class="stack-tag">Evals LLM</span>
-<span class="stack-tag">Claude API</span>
 </div>
 
+<p class="proyecto-intro">Empresa simulada de comercio electrónico que monté como laboratorio: los datos son ficticios y el sistema funciona de verdad.</p>
+
 <ul class="proyecto-bullets">
-<li>Arquitectura de datos relacional MySQL con más de <strong class="kpi">17.000 registros</strong> y modelado dimensional orientado a reporting financiero.</li>
-<li>Desarrollo de dashboards ejecutivos en Power BI con <strong class="kpi">78 medidas DAX</strong> — KPIs de ventas, márgenes y cash flow validados al céntimo.</li>
-<li>7 skills de IA personalizadas validadas con <strong class="kpi">3 evals automatizados · 110 casos · 100%</strong> de precisión en benchmark.</li>
-<li>Automatización de reporting y alertas mediante IA generativa, n8n y Claude API. <strong class="kpi">–60% tiempo de reporting mensual.</strong></li>
+<li>Base de datos contable en MySQL con el Plan General Contable: <strong class="kpi">cerca de 19.000 registros</strong> en 19 tablas, con 6.399 asientos y 17.399 líneas de 2023 a julio de 2026, cuadrados al céntimo sobre 22 millones por lado.</li>
+<li>Modelo de Power BI con <strong class="kpi">77 medidas DAX</strong>. Las cifras del cuadro de mando se contrastan al céntimo con una consulta SQL independiente.</li>
+<li><strong class="kpi">Cerca de 50 skills propias</strong> para contabilidad, tesorería, control interno, análisis de datos, marketing y programación, coordinadas por un enrutador que decide cuál entra en cada tarea.</li>
+<li>Cinco agentes contables con permisos separados: el que lee la factura no propone el asiento, el que lo verifica no puede escribir y el único que escribe lo hace en una tabla de borradores. El paso al libro diario lleva <strong class="kpi">human in the loop</strong>.</li>
+<li>Servidor MCP propio con seis herramientas contables. La IA entra con un usuario de base de datos que no tiene permiso para borrar.</li>
+<li>Evaluación continua: <strong class="kpi">24 skills con evals ejecutadas</strong> y sus resultados guardados, y 681 bancos de pruebas automáticos. Cada control se prueba también con casos que tienen que fallar.</li>
+<li>Reporting en el que la IA no calcula ninguna cifra: motores en Python de antigüedad de saldos, ratios y previsión de caja con backtesting, que vuelcan sus resultados en MySQL.</li>
+<li>Entrada de facturas de proveedor por correo automatizada con n8n y diseñada con una guía de <strong class="kpi">19 fases</strong>, que fija qué hace la IA, qué hace el código y quién aprueba. Hoy en fase piloto.</li>
 </ul>
 <div style="margin-top:8px;font-size:10px;color:#2E86AB;">
-  🔗 <a href="https://juanluisleon.vercel.app" style="color:#2E86AB;">juanluisleon.vercel.app</a> &nbsp;·&nbsp;
-  <a href="https://github.com/jleonceo/llm-eval-contable" style="color:#2E86AB;">github.com/jleonceo/llm-eval-contable</a>
+  <a href="https://github.com/jleonceo" style="color:#2E86AB;">github.com/jleonceo</a>, 27 repositorios públicos &nbsp;·&nbsp;
+  <a href="https://github.com/jleonceo/accounting-agent-swarm" style="color:#2E86AB;">accounting-agent-swarm</a> &nbsp;·&nbsp;
+  <a href="https://de-datos-en-bruto-a-decisiones.vercel.app" style="color:#2E86AB;">de-datos-en-bruto-a-decisiones.vercel.app</a>
 </div>
 </div>
 </section>
@@ -384,8 +435,9 @@ Profesional senior con más de 25 años de experiencia en control de gestión, a
 <div class="exp-empresa">Nou Mestres 2022 SL • La Pineda</div>
 
 <ul class="exp-bullets">
-<li>Reporting operativo y control de desviaciones en contexto de obras urbanas durante temporada completa.</li>
-<li><strong class="kpi">+17% facturación</strong> frente a previsiones negativas del sector por afectación directa de obras.</li>
+<li>Reporting operativo y control de desviaciones durante una temporada completa.</li>
+<li><strong class="kpi">+17 % de facturación</strong> frente a unas previsiones negativas del sector.</li>
+<li><strong class="kpi">−21 % de coste de personal</strong> manteniendo la operativa completa, con ajuste de turnos y procesos.</li>
 </ul>
 
 <div class="chart-block">
@@ -393,13 +445,7 @@ Profesional senior con más de 25 años de experiencia en control de gestión, a
 <strong>Contexto:</strong> temporada completa con obras urbanas a 25m del establecimiento y previsión sectorial negativa.
 </div>
 
-<div class="chart-legend">
-<span><span class="leg-sq" style="background:#1E3A5F"></span>2024 base</span>
-<span><span class="leg-sq" style="background:#2E86AB"></span>2025 real</span>
-<span><span style="display:inline-block;width:16px;height:0;border-top:2px dashed #E24B4A;"></span>Escenario esperado</span>
-</div>
-
-<div style="position:relative;width:100%;height:120px;">
+<div style="position:relative;width:100%;height:140px;">
 <canvas id="mestres"></canvas>
 </div>
 </div>
@@ -407,15 +453,16 @@ Profesional senior con más de 25 años de experiencia en control de gestión, a
 
 <div class="exp-item">
 <div class="exp-header">
-<div class="exp-title">Propietario y Gerente — León Beach Club</div>
+<div class="exp-title">Propietario y Gerente · León Beach Club</div>
 <span class="exp-fecha">May 2011 – Mar 2024</span>
 </div>
 <div class="exp-empresa">JLEONRO SL • Salou</div>
 
 <ul class="exp-bullets">
-<li>Gestión integral de negocio: operaciones, RRHH, proveedores, banca y control económico.</li>
-<li>Transformación digital orientada a control de costes y previsión de tesorería.</li>
-<li>Innovación de producto y experiencia cliente en entorno hospitality premium.</li>
+<li>Dirección del negocio durante trece años: equipo, proveedores, bancos y control económico.</li>
+<li><strong class="kpi">+90 % de facturación</strong> entre 2012 y 2023, con la recuperación completa después del COVID.</li>
+<li>Contabilidad en Sage durante todo el año, con la gestoría haciendo los cierres y presentando los impuestos.</li>
+<li>Negociación con entidades financieras de préstamos, pólizas y líneas de financiación.</li>
 </ul>
 
 <div class="chart-block">
@@ -442,9 +489,10 @@ Evolución indexada de facturación 2012–2023.
 <div class="exp-empresa">Infordisa SA / Autónomo • Valls y Reus</div>
 
 <ul class="exp-bullets">
-<li>Formación en Contabilidad, SQL y Microsoft Office a más de 500 profesionales.</li>
-<li>Implantación y soporte de software de gestión empresarial y ERP.</li>
-<li>Certificación oficial MCAS Microsoft.</li>
+<li>Cursos de contabilidad, ofimática e internet para empresas, trabajadores y funcionarios de la Seguridad Social, la Guardia Civil y Hacienda.</li>
+<li>Contabilidad interna de Infordisa entre 1999 y 2004.</li>
+<li>Gestión de cursos subvencionados (FORCEM, hoy FUNDAE): tramitación, seguimiento y justificación de costes.</li>
+<li>Redacción de manuales de autoformación para el alumnado.</li>
 </ul>
 
 <div class="chart-block">
@@ -472,43 +520,52 @@ Evolución indexada de facturación 2012–2023.
 <div class="section-title">Formación</div>
 
 <div class="edu-item">
-<div class="edu-titulo">Bachelor en Ciencia de Datos • Universitat Carlemany</div>
-<div class="edu-meta">En curso • 2024</div>
+<div class="edu-titulo">Máster en IA Aplicada y Optimización de Procesos Productivos • Visual Business School</div>
+<div class="edu-meta">2026 • En curso</div>
 </div>
 
 <div class="edu-item">
-<div class="edu-titulo">MBA + Máster en Dirección de RRHH • ENEB / Grupo Esneca</div>
-<div class="edu-meta">2018</div>
+<div class="edu-titulo">Data Analytics Mastery · IA Edition • DS4B</div>
+<div class="edu-meta">2026 • En curso</div>
 </div>
 
 <div class="edu-item">
-<div class="edu-titulo">Máster en IA y Automatización • Visual Business School</div>
-<div class="edu-meta">En curso • 2026</div>
+<div class="edu-titulo">Grado en Ciencia de Datos • Universitat Carlemany</div>
+<div class="edu-meta">2022 • En curso</div>
+</div>
+
+<div class="edu-item">
+<div class="edu-titulo">Data Analytics Mastery y Python Data Science Mastery • DS4B</div>
+<div class="edu-meta">2022–2023</div>
 </div>
 
 <div class="edu-item">
 <div class="edu-titulo">Certificación MCAS • Microsoft</div>
-<div class="edu-meta">2008 — Access, Excel, Word y PowerPoint</div>
+<div class="edu-meta">2008 • Access, Excel, Word y PowerPoint</div>
 </div>
 
 <div class="edu-item">
-<div class="edu-titulo">Python Data Science Mastery • DS4B</div>
-<div class="edu-meta">2024</div>
-</div>
-
-<div class="edu-item">
-<div class="edu-titulo">Data Analytics Mastery • DS4B</div>
-<div class="edu-meta">2024</div>
-</div>
-
-<div class="edu-item">
-<div class="edu-titulo">Especialización Contabilidad Analítica, Financiera y Fiscal • INTECT</div>
-<div class="edu-meta">1997–1998</div>
+<div class="edu-titulo">Curso Superior de Seguridad Social y Derecho Laboral • CEF</div>
+<div class="edu-meta">1998–1999 • 450 horas</div>
 </div>
 
 <div class="edu-item">
 <div class="edu-titulo">Diplomatura en Relaciones Laborales • Universitat Rovira i Virgili</div>
-<div class="edu-meta">1997</div>
+<div class="edu-meta">1999</div>
+</div>
+
+<div class="edu-item">
+<div class="edu-titulo">Especialización en Contabilidad Analítica, Financiera y Fiscal • INTECT</div>
+<div class="edu-meta">1997–1998 • 800 horas</div>
+</div>
+</section>
+
+<section>
+<div class="section-title">Divulgación</div>
+
+<div class="edu-item">
+<div class="edu-titulo">Charla sobre skills de IA • Codemarketers</div>
+<div class="edu-meta">26 de junio de 2026</div>
 </div>
 </section>
 
@@ -516,39 +573,65 @@ Evolución indexada de facturación 2012–2023.
 </div>
 
 <script>
+Chart.defaults.animation = false;
 const base2024 = 150;
 const real2025 = 176;
 const esperado2025 = 120;
 
+const mestresValores = [base2024, esperado2025, real2025];
+const mestresTextos = ['#1E3A5F', '#E24B4A', '#2E86AB'];
+
+const lineaBaseYEtiquetas = {
+id: 'lineaBaseYEtiquetas',
+beforeDatasetsDraw(chart) {
+const { ctx, chartArea, scales } = chart;
+const yBase = scales.y.getPixelForValue(base2024);
+ctx.save();
+ctx.setLineDash([3, 3]);
+ctx.strokeStyle = 'rgba(30,58,95,0.45)';
+ctx.lineWidth = 1;
+ctx.beginPath();
+ctx.moveTo(chartArea.left, yBase);
+ctx.lineTo(chartArea.right, yBase);
+ctx.stroke();
+ctx.restore();
+},
+afterDatasetsDraw(chart) {
+const { ctx } = chart;
+ctx.save();
+ctx.font = '600 10px "DM Sans", sans-serif';
+ctx.textAlign = 'center';
+chart.getDatasetMeta(0).data.forEach((barra, i) => {
+if (i === 0) return;
+const pct = Math.round((mestresValores[i] / base2024 - 1) * 100);
+const texto = (pct > 0 ? '+' : '−') + Math.abs(pct) + ' %';
+ctx.fillStyle = mestresTextos[i];
+ctx.fillText(texto, barra.x, barra.y - 5);
+});
+ctx.restore();
+}
+};
+
 new Chart(document.getElementById('mestres'), {
 type: 'bar',
 data: {
-labels: ['2024', '2025'],
-datasets: [
-{
-label: '2024 base',
-data: [base2024, null],
-backgroundColor: '#1E3A5F'
-},
-{
-label: '2025 real',
-data: [null, real2025],
-backgroundColor: '#2E86AB'
-},
-{
-label: 'Esperado',
-data: [null, esperado2025],
-backgroundColor: 'rgba(226,75,74,0.12)',
-borderColor: '#E24B4A',
-borderWidth: 2
-}
-]
+labels: [['2024', 'base'], ['2025', 'previsto con obras'], ['2025', 'real']],
+datasets: [{
+data: mestresValores,
+backgroundColor: ['#1E3A5F', 'rgba(226,75,74,0.12)', '#2E86AB'],
+borderColor: ['#1E3A5F', '#E24B4A', '#2E86AB'],
+borderWidth: [0, 2, 0],
+categoryPercentage: 0.7,
+barPercentage: 0.75
+}]
 },
 options: {
 responsive: true,
 maintainAspectRatio: false,
+layout: { padding: { top: 14 } },
 plugins: {
-legend: { display: false }
+legend: { display: false },
+tooltip: { enabled: false }
 },
 scales: {
 x: {
@@ -558,10 +641,11 @@ ticks: { color: '#1E3A5F', font: { size: 9 } }
 y: {
 display: false,
 min: 0,
-max: 220
+max: 200
 }
 }
-}
+},
+plugins: [lineaBaseYEtiquetas]
 });
 
 const lbcLabels = ['2012','2013','2014','2015','2016','2017','2018','2019','2020','2021','2022','2023'];
