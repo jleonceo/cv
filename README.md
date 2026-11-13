@@ -1,3 +1,5 @@
+English version: [README.en.md](README.en.md)
+
 # CV · Juan Luis León Rodríguez
 
 Currículum profesional en formato HTML/CSS, listo para imprimir en A4 o visualizar en navegador.
